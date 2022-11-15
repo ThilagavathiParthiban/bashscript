@@ -15,7 +15,7 @@ else
         sudo systemctl start $wname
 fi
 cd /var/www/html
-ls -lh
+ls
 echo "enter the file name (index.html /index.nginx-debian.html)"
 read a
 sudo truncate -s 0 $a

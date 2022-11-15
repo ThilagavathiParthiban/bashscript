@@ -11,7 +11,7 @@ read school
 if [ $school == yes ]
 then
         echo "get ready for school"
-        echo
+        
 
 echo "Check whether school is half day or fullday? (half/full)"
 read day

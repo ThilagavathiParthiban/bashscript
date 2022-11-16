@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo
+
 echo "what is student's name"
 read a
 echo

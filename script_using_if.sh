@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-
+echo
 echo "what is student's name"
 read a
 echo
@@ -107,7 +107,7 @@ read homework
 else [ $school == no ]
         echo "Happy holiday"
 fi
-
+ls
 
 
                                                                                                                                                                                                                                                                                                             

@@ -1,6 +1,7 @@
 #!/bin/bash
 #installing webservers
 clear
+echo
 echo "enter the webserver name"
 read wname
 sudo apt update

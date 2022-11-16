@@ -107,7 +107,7 @@ read homework
 else [ $school == no ]
         echo "Happy holiday"
 fi
-ls
+
 
 
                                                                                                                                                                                                                                                                                                             

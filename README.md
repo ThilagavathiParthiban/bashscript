@@ -1,3 +1,1 @@
 # bashscript
-
-

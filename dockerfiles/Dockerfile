@@ -7,8 +7,8 @@ RUN apt-get -y update && apt-get -y install nginx  && apt-get -y install vim
 # Copy the Nginx config
 COPY default /etc/nginx/sites-available/default
 
-COPY html/index.html /usr/share/nginx/html
-COPY html/style.css /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html
+COPY style.css /usr/share/nginx/html
 
 # Expose the port for access
 EXPOSE 8080/tcp

@@ -5,13 +5,13 @@ FROM ubuntu
 RUN apt-get -y update && apt-get -y install nginx  && apt-get -y install vim
 
 # Copy the Nginx config
-#COPY default /etc/nginx/sites-available/default
+COPY default /etc/nginx/sites-available/default
 
-#COPY html/index.html /usr/share/nginx/html
-#COPY html/test.css /usr/share/nginx/html
+COPY html/index.html /usr/share/nginx/html
+COPY html/style.css /usr/share/nginx/html
 
 # Expose the port for access
-EXPOSE 80/tcp
+EXPOSE 8080/tcp
 
 # Run the Nginx server
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]

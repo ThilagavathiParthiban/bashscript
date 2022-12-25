@@ -2,7 +2,7 @@
 FROM alpine
 
 # Install Nginx
-RUN apt-get -y update && apt-get -y install nginx  && apt-get -y install vim
+RUN apt -y update && apt -y install nginx  && apt -y install vim
 
 # Copy the Nginx config
 COPY default /etc/nginx/sites-available/default

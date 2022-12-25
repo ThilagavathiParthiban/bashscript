@@ -1,5 +1,5 @@
 #Ubuntu image
-FROM ubuntu
+FROM alpine
 
 # Install Nginx
 RUN apt-get -y update && apt-get -y install nginx  && apt-get -y install vim

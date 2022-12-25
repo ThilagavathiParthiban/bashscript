@@ -2,7 +2,8 @@
 FROM alpine
 
 # Install Nginx
-RUN apt -y update && apt -y install nginx  && apt -y install vim
+RUN apk add --no-cache nginx
+RUN apk add --no-cache vim
 
 # Copy the Nginx config
 COPY default /etc/nginx/sites-available/default

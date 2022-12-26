@@ -5,11 +5,11 @@ terraform {
       version = "4.48.0"
     }
   }
-  backend "s3" {
-    bucket = "terraform1-backup"
-    key    = "ec2"
-    region = "ap-south-1"
-  }
+#   backend "s3" {
+#     bucket = "terraform1-backup"
+#     key    = "ec2"
+#     region = "ap-south-1"
+#   }
 }
 provider "aws" {
   region  = "ap-south-1"

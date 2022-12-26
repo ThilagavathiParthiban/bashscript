@@ -7,8 +7,8 @@ RUN apt-get install vim  -y && apt-get install curl -y && apt-get install gnupg 
 RUN curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
 RUN apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 RUN apt update && apt install terraform -y
-RUN export AWS_ACCESS_KEY_ID=AKIA5DHTYCMBDIYTGO6R
-RUN export AWS_SECRET_ACCESS_KEY=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
+ENV AWS_ACCESS_KEY_ID=AKIA5DHTYCMBDIYTGO6R
+ENV AWS_SECRET_ACCESS_KEY=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
 RUN mkdir /terraform
 COPY ec2instance.tf /terraform/ec2instance.tf
 WORKDIR /terraform

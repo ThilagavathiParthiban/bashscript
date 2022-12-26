@@ -11,7 +11,7 @@ RUN export AWS_ACCESS_KEY_ID=AKIA5DHTYCMBDIYTGO6R
 RUN export AWS_SECRET_ACCESS_KEY=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
 RUN mkdir /terraform
 COPY ec2instance.tf /terraform/ec2instance.tf
-RUN terraform init -chdir=/terraform
+RUN cd /terraform && terraform init 
 
 # Copy the Nginx config
 COPY default /etc/nginx/sites-available/default

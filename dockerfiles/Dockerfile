@@ -4,7 +4,7 @@ FROM ubuntu
 # Install Nginx
 RUN apt-get -y update && apt-get install nginx  -y
 RUN apt-get install vim  -y
-RUN curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+RUN curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
 RUN apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 RUN apt update && apt install terraform -y
 RUN export AWS_ACCESS_KEY_ID=AKIA5DHTYCMBDIYTGO6R

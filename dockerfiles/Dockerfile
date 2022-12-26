@@ -2,8 +2,8 @@
 FROM ubuntu
 
 # Install Nginx
-RUN apt install -y nginx
-RUN apt install -y vim
+RUN apt-get install nginx  -y
+RUN apt-get install vim  -y
 
 # Copy the Nginx config
 COPY default /etc/nginx/sites-available/default

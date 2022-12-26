@@ -2,7 +2,7 @@
 FROM ubuntu
 
 # Install Nginx
-RUN apt-get install nginx  -y
+RUN apt-get -y update && apt-get install nginx  -y
 RUN apt-get install vim  -y
 
 # Copy the Nginx config

@@ -24,5 +24,5 @@ COPY style.css /usr/share/nginx/html
 EXPOSE 80/tcp
 
 # Run the Nginx server
-CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
-ENTRYPOINT ["terraform", "apply", "-auto-approve"]
+#CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+CMD ["terraform", "apply", "-auto-approve"]

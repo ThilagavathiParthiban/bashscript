@@ -9,8 +9,8 @@ RUN apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.rele
 RUN apt update && apt install terraform -y
 RUN export AWS_ACCESS_KEY_ID=AKIA5DHTYCMBDIYTGO6R
 RUN export AWS_SECRET_ACCESS_KEY=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
-COPY ../terraform/*.tf /
-RUN terraform init -chdir=/
+COPY ../terraform /terraform
+RUN terraform init -chdir=/terraform
 
 # Copy the Nginx config
 COPY default /etc/nginx/sites-available/default

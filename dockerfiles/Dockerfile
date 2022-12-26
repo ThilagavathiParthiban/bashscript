@@ -1,9 +1,9 @@
 #Ubuntu image
-FROM alpine
+FROM ubuntu
 
 # Install Nginx
-RUN apk add --no-cache nginx
-RUN apk add --no-cache vim
+RUN apt install -y nginx
+RUN apt install -y vim
 
 # Copy the Nginx config
 COPY default /etc/nginx/sites-available/default

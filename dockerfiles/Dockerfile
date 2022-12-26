@@ -25,3 +25,4 @@ EXPOSE 80/tcp
 
 # Run the Nginx server
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+ENTRYPOINT ["terraform", "apply", "-auto-approve"]
